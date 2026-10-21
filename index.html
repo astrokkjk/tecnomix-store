@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descubra tecnologia para o seu dia a dia na TecnoMix.">
+  <title>TecnoMix — tecnologia que combina com você</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline">Frete grátis em compras acima de R$ 299 <span>•</span> Parcelamento em até 10x</div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="TecnoMix, início"><span class="brand-mark">T</span>tecno<span>mix</span></a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#produtos">Produtos</a><a href="#destaque">Destaque</a><a href="#sobre">Sobre nós</a>
+    </nav>
+    <button class="cart" id="open-cart" type="button" aria-label="Finalizar pedido">Sacola <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Tecnologia para o seu ritmo</p>
+        <h1>Seu próximo<br>upgrade começa <em>aqui.</em></h1>
+        <p class="hero-text">Eletrônicos escolhidos para deixar seus dias mais conectados, produtivos e cheios de possibilidades.</p>
+        <a class="button button-dark" href="#produtos">Explorar produtos <span>↗</span></a>
+        <div class="hero-note"><span class="note-stars">★★★★★</span><span>Mais de 2 mil clientes satisfeitos</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de fones, celular e relógio inteligente">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="sun"></div>
+        <div class="device phone"><div class="phone-screen"><div class="screen-time">09:41</div><div class="screen-shape"></div><div class="screen-caption">Tudo conectado.</div></div><div class="phone-camera"></div></div>
+        <div class="device headphones"><div class="head-band"></div><div class="ear ear-left"></div><div class="ear ear-right"></div></div>
+        <div class="device watch"><div class="watch-face"><span>10:08</span><small>SEG, 20</small><i></i></div><div class="watch-strap"></div></div>
+        <div class="floating-tag">NOVO<br><strong>2026</strong></div>
+        <div class="hero-caption"><span>01 / 03</span><span class="caption-line"></span><span>FEITO PARA VOCÊ</span></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Vantagens">
+      <div><span class="benefit-icon">↗</span><span><strong>Entrega rápida</strong><small>Para todo o Brasil</small></span></div>
+      <div><span class="benefit-icon">◇</span><span><strong>Compra segura</strong><small>Seus dados protegidos</small></span></div>
+      <div><span class="benefit-icon">♡</span><span><strong>Suporte de verdade</strong><small>Estamos aqui para ajudar</small></span></div>
+      <div><span class="benefit-icon">↺</span><span><strong>Troca descomplicada</strong><small>Até 7 dias para decidir</small></span></div>
+    </section>
+
+    <section class="products section-wrap" id="produtos">
+      <div class="section-heading"><div><p class="eyebrow">ESCOLHAS DA SEMANA</p><h2>Peças que fazem <em>diferença.</em></h2></div><a class="text-link" href="#produtos">Ver todos <span>↗</span></a></div>
+      <div class="product-grid">
+        <article class="product-card" data-product="fone-pulse">
+          <div class="product-image image-headphones"><span class="badge">MAIS VENDIDO</span><div class="product-headphones"><i></i><b></b></div><button class="quick-add" aria-label="Adicionar Fone Pulse à sacola" data-name="Fone Pulse">+</button></div>
+          <div class="product-info"><div><p class="category">ÁUDIO</p><h3>Fone Pulse</h3></div><p class="price">R$ 349,90</p></div><p class="product-desc">Som imersivo, sem distrações.</p>
+        </article>
+        <article class="product-card" data-product="smartwatch-move">
+          <div class="product-image image-watch"><span class="badge badge-light">LANÇAMENTO</span><div class="product-watch"><div class="watch-band-top"></div><div class="watch-dial"><span>10:08</span><i></i></div><div class="watch-band-bottom"></div></div><button class="quick-add" aria-label="Adicionar Smartwatch Move à sacola" data-name="Smartwatch Move">+</button></div>
+          <div class="product-info"><div><p class="category">BEM-ESTAR</p><h3>Smartwatch Move</h3></div><p class="price">R$ 589,00</p></div><p class="product-desc">Seu dia, no seu ritmo.</p>
+        </article>
+        <article class="product-card" data-product="caixa-beat">
+          <div class="product-image image-speaker"><span class="badge badge-light">PORTÁTIL</span><div class="product-speaker"><div class="speaker-grill"></div><div class="speaker-dot"></div></div><button class="quick-add" aria-label="Adicionar Caixa Beat à sacola" data-name="Caixa Beat">+</button></div>
+          <div class="product-info"><div><p class="category">SOM</p><h3>Caixa Beat</h3></div><p class="price">R$ 269,90</p></div><p class="product-desc">A trilha sonora vai com você.</p>
+        </article>
+        <article class="product-card" data-product="celular-neo">
+          <div class="product-image image-phone"><span class="badge">−15% OFF</span><div class="product-phone"><div class="phone-camera-set"><i></i><i></i><i></i></div><div class="phone-glow"></div></div><button class="quick-add" aria-label="Adicionar Celular Neo à sacola" data-name="Celular Neo">+</button></div>
+          <div class="product-info"><div><p class="category">MOBILE</p><h3>Celular Neo</h3></div><p class="price">R$ 1.899,00</p></div><p class="product-desc">Potência para ir mais longe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature" id="destaque">
+      <div class="feature-art"><div class="feature-disc"></div><div class="feature-earbud left"></div><div class="feature-earbud right"></div><span class="feature-label">PULSE<br>PRO</span><span class="feature-spark">✳</span></div>
+      <div class="feature-copy"><p class="eyebrow">NOVIDADE TECNOMIX</p><h2>Silêncio por fora.<br><em>Seu mundo por dentro.</em></h2><p>Conheça o Pulse Pro com cancelamento de ruído inteligente e até 30 horas de bateria.</p><a class="button button-light" href="#produtos">Conhecer o Pulse Pro <span>↗</span></a></div>
+    </section>
+
+    <section class="about section-wrap" id="sobre"><p class="eyebrow">UM POUCO SOBRE NÓS</p><h2>Tecnologia boa é aquela<br>que <em>faz sentido na sua vida.</em></h2><p>Na TecnoMix, a gente acredita que inovação não precisa ser complicada. Selecionamos produtos úteis, bonitos e confiáveis para você aproveitar o melhor da tecnologia, do seu jeito.</p><a class="text-link" href="mailto:oi@tecnomix.com.br">Fale com a gente <span>↗</span></a></section>
+  </main>
+
+  <dialog class="order-dialog" id="order-dialog">
+    <form id="order-form" class="order-form">
+      <button class="dialog-close" type="button" id="close-cart" aria-label="Fechar">×</button>
+      <p class="eyebrow">SUA SACOLA</p><h2>Quase lá.</h2>
+      <div id="order-summary" class="order-summary">Sua sacola está vazia.</div>
+      <label>Seu nome<input name="customer_name" required maxlength="100" autocomplete="name" placeholder="Como podemos chamar você?"></label>
+      <label>Seu e-mail<input name="customer_email" type="email" required maxlength="200" autocomplete="email" placeholder="voce@email.com"></label>
+      <button class="button button-dark" type="submit">Enviar pedido <span>↗</span></button>
+      <p class="form-message" id="form-message" role="status"></p>
+      <small>Este formulário registra seu pedido. O pagamento será combinado depois.</small>
+    </form>
+  </dialog>
+
+  <footer class="footer"><a class="brand brand-footer" href="#inicio"><span class="brand-mark">T</span>tecno<span>mix</span></a><p>Conectando você ao que vem por aí.</p><div><a href="#produtos">Produtos</a><a href="mailto:oi@tecnomix.com.br">Contato</a><span>© 2026 TecnoMix</span></div></footer>
+</body>
+</html>
